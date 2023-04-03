@@ -39,13 +39,14 @@ public class Main {
         System.out.println(message);
         while(true) {
             try {
-                int result =Integer.parseInt(sc.nextLine());
+                int result = Integer.parseInt(sc.nextLine());
                 if (result >= min && result <= max) {
                     return result;
                 } else {
-                    throw new IllegalStateException("La valeur doit être comprise entre "
-                            + min + "et " + max + ": " + result);
+                    throw new IllegalStateException("La valeur doit être comprise entre " + min + "et " + max + ": " + result);
                 }
+            } catch (NumberFormatException e) {
+                System.err.println("Erreur survenue, la valeur doit être un entier.");
             } catch (RuntimeException e) {
                 System.err.println("Une erreur est survenue: " + e);
                 System.out.print(message);
