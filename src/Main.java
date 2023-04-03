@@ -2,7 +2,7 @@
 //de se produire soient gérées jusqu’à ce qu’un calcul soit effectivement mené à bout.
 import java.util.Scanner;
 import java.util.InputMismatchException;
-
+//essaie dans github
 public class Main {
 
     static int[] tableau = {17, 12, 15, 38, 29, 157, 89, -22, 0, 5};
